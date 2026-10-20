@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#060b1b">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="انجمن علمی مهندسی کامپیوتر دانشگاه آزاد اسلامی واحد تبریز؛ جامعه‌ای برای ساختن، یادگرفتن و تجربه‌کردن آینده فناوری.">
+  <meta property="og:title" content="انجمن علمی کامپیوتر | دانشگاه آزاد تبریز">
+  <meta property="og:description" content="فقط کد نمی‌زنیم. آینده را می‌سازیم.">
+  <title>انجمن علمی کامپیوتر | دانشگاه آزاد تبریز</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="announcement"><span class="announcement-pulse"></span><span>نسخه نمایشی انجمن علمی کامپیوتر · ثبت‌نام آنلاین در دست راه‌اندازی</span><a href="#join">به ما ملحق شو <span aria-hidden="true">↗</span></a></div>
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner shell">
+      <a class="brand" href="#top" aria-label="صفحه اصلی انجمن علمی کامپیوتر">
+        <span class="brand-icon"><svg viewBox="0 0 52 52" fill="none" aria-hidden="true"><path d="M26 5.5 43.8 15.75v20.5L26 46.5 8.2 36.25v-20.5L26 5.5Z" stroke="currentColor" stroke-width="1.5"/><path d="m21 18-8 8 8 8M31 18l8 8-8 8M29 14 23 38" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="26" cy="5.5" r="2.8" fill="#9dbaff"/></svg></span>
+        <span class="brand-titles"><strong>انجمن علمی کامپیوتر</strong><small>دانشگاه آزاد اسلامی واحد تبریز</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="ناوبری اصلی"><a href="#about">درباره ما</a><a href="#events">رویدادها</a><a href="#explore">فعالیت‌ها</a><a href="#editorial">نشریه و پادکست</a><a href="#join">عضویت</a></nav>
+      <div class="header-actions"><a class="mini-btn" href="#join">عضویت در انجمن <span>↗</span></a><button class="menu-toggle" id="menuToggle" type="button" aria-label="باز کردن منو" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button></div>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu" aria-label="منوی موبایل"><a href="#about">درباره ما</a><a href="#events">رویدادها</a><a href="#explore">فعالیت‌ها</a><a href="#editorial">نشریه و پادکست</a><a href="#join">عضویت / ثبت‌نام</a></nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section" aria-labelledby="heroTitle">
+      <div class="hero-noise" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <canvas id="networkCanvas" aria-hidden="true"></canvas>
+      <div class="shell hero-layout">
+        <div class="hero-content reveal">
+          <div class="eyebrow"><span class="eyebrow-line"></span><span>WELCOME TO THE NEXT GENERATION</span><span class="eyebrow-star">✳</span></div>
+          <p class="hero-overline">انجمن علمی مهندسی کامپیوتر · تبریز</p>
+          <h1 id="heroTitle">اینجا فقط<br><span class="muted-title">کد نمی‌زنیم.</span><br><span class="hero-gradient">آینده رو می‌سازیم<span class="hero-dot">.</span></span></h1>
+          <p class="hero-description">از اولین خط کد تا جسورانه‌ترین ایده‌ها. جایی برای آدم‌هایی که دنبال بیشتر از کلاس و جزوه‌اند؛ برای ساختن، کشف‌کردن و کنار هم رشدکردن.</p>
+          <div class="hero-ctas"><a href="#join" class="btn btn-primary">وارد جمع ما شو <span class="btn-arrow">↗</span></a><a href="#events" class="btn btn-ghost">رویدادها رو ببین <span>↓</span></a></div>
+          <div class="hero-avatars"><div class="avatar-stack"><span>01</span><span>10</span><span>11</span><span>00</span></div><span>از ایده تا اجرا، <strong>کنار هم.</strong></span></div>
+        </div>
+        <div class="hero-art reveal" aria-hidden="true">
+          <div class="orbit-ambient"></div><div class="orbit-ring orbit-ring-1"></div><div class="orbit-ring orbit-ring-2"></div><div class="orbit-ring orbit-ring-3"></div>
+          <div class="orbit-center"><div class="orbit-hex"><svg viewBox="0 0 160 160" fill="none"><path d="m80 12 59 34v68l-59 34-59-34V46L80 12Z" stroke="currentColor" stroke-width="1.2"/><path d="m65 56-24 24 24 24M95 56l24 24-24 24M91 43l-22 74" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="orbit-center-label">BUILD WHAT'S NEXT</div></div>
+          <div class="orbit-satellite satellite-1"><span class="satellite-light"></span><span>CREATIVITY.EXE</span></div><div class="orbit-satellite satellite-2"><span>01 / INNOVATION</span><b>↗</b></div><div class="orbit-satellite satellite-3"><span>CODE. CREATE. CONNECT.</span></div>
+          <div class="orbit-coordinate">38°05' N · 46°17' E</div><div class="orbit-index">A / 001</div>
+        </div>
+      </div>
+      <div class="hero-bottom shell"><span class="scroll-hint"><span class="scroll-mouse"></span>برای کشف بیشتر اسکرول کن</span><span class="hero-bottom-end">AZAD UNIVERSITY OF TABRIZ <span>✳</span> COMPUTER SCIENCE SOCIETY</span></div>
+    </section>
+
+    <div class="ticker" aria-label="حوزه‌های فعالیت انجمن"><div class="ticker-track"><span>ARTIFICIAL INTELLIGENCE <b>✳</b></span><span>OPEN SOURCE <b>✳</b></span><span>HACKATHONS <b>✳</b></span><span>CREATIVE TECHNOLOGY <b>✳</b></span><span>COMMUNITY FIRST <b>✳</b></span><span>ARTIFICIAL INTELLIGENCE <b>✳</b></span><span>OPEN SOURCE <b>✳</b></span><span>HACKATHONS <b>✳</b></span><span>CREATIVE TECHNOLOGY <b>✳</b></span><span>COMMUNITY FIRST <b>✳</b></span></div></div>
+
+    <section id="about" class="section about-section section-pad">
+      <div class="shell"><div class="section-label reveal"><span>01 / WHO WE ARE</span><span>داستان ما</span></div>
+        <div class="about-layout"><div class="reveal"><p class="tiny-kicker">NOT ANOTHER STUDENT CLUB.</p><h2 class="display-heading">یه انجمن.<br>هزار تا <em>امکان.</em></h2></div><div class="about-copy reveal"><p>ما یه جامعه دانشجویی هستیم برای کسایی که به «همین که هست» قانع نیستن. یاد می‌گیریم، مسابقه می‌دیم، پروژه می‌سازیم، تجربه‌هامون رو منتشر می‌کنیم و فرصت‌هایی خلق می‌کنیم که بیرون از چهاردیواری کلاس اتفاق می‌افتن.</p><a href="#explore" class="text-link">ببین چه کارهایی می‌کنیم <span>↗</span></a></div></div>
+        <div class="manifesto-grid"><div class="manifesto-item reveal"><span class="manifesto-num">01</span><div><h3>یاد بگیر.</h3><p>کارگاه‌های کاربردی، تجربه واقعی و یادگیری از همدیگه.</p></div><span class="manifesto-symbol">⌘</span></div><div class="manifesto-item reveal"><span class="manifesto-num">02</span><div><h3>بساز.</h3><p>تیم پیدا کن و ایده‌هات رو از کاغذ به محصول برسون.</p></div><span class="manifesto-symbol">↗</span></div><div class="manifesto-item reveal"><span class="manifesto-num">03</span><div><h3>اثر بذار.</h3><p>تجربه‌ات رو به اشتراک بذار و چیزی به جامعه اضافه کن.</p></div><span class="manifesto-symbol">✳</span></div></div>
+      </div>
+    </section>
+
+    <section id="events" class="section events-section section-pad">
+      <div class="shell"><div class="section-label reveal"><span>02 / THE HAPPENINGS</span><span>رویدادهای انجمن</span></div>
+        <div class="section-head reveal"><div><p class="tiny-kicker">SAVE YOUR SPOT</p><h2 class="display-heading">از دستشون <em>نده.</em></h2></div><p class="section-intro">کارگاه، رقابت، دورهمی و کلی تجربه تازه. برنامه‌هایی که برای تماشاگر بودن طراحی نشدن.</p></div>
+        <div class="events-grid" id="eventsGrid" aria-live="polite"><div class="event-loading">در حال آماده‌کردن رویدادها <span class="loading-dots">...</span></div></div>
+        <div class="events-footer"><span>زمان و مکان نهایی رویدادها پس از اعلام رسمی درج می‌شود.</span><a href="#join" class="text-link">پیش‌ثبت‌نام رویدادها <span>↗</span></a></div>
+      </div>
+    </section>
+
+    <section id="explore" class="section explore-section section-pad"><div class="shell"><div class="section-label reveal"><span>03 / THINGS WE DO</span><span>جهان انجمن</span></div><div class="section-head reveal"><div><p class="tiny-kicker">THERE'S ROOM FOR EVERY IDEA</p><h2 class="display-heading">علاقه‌ت هر چی باشه،<br><em>اینجا جا داری.</em></h2></div><p class="section-intro">انجمن فقط برگزارکننده کارگاه نیست. یه اکوسیستمه، از یادگیری و رقابت گرفته تا رسانه و کار تیمی.</p></div>
+      <div class="program-grid">
+        <article class="program-card card-large reveal"><span class="program-no">/ 01</span><div class="program-art program-art-code" aria-hidden="true"><span class="fake-code"><i>const</i> future = {<br>&nbsp;&nbsp;curiosity: <b>true</b>,<br>&nbsp;&nbsp;limits: <b>null</b>,<br>&nbsp;&nbsp;community: <b>∞</b><br>};</span><span class="code-terminal">● ● ●</span></div><div class="program-content"><span class="program-category">LEARN & BUILD</span><h3>کارگاه و مسیر یادگیری</h3><p>از AI و برنامه‌نویسی تا طراحی محصول، گیت و مهارت‌های واقعی بازار کار.</p></div><span class="program-arrow">↗</span></article>
+        <article class="program-card reveal"><span class="program-no">/ 02</span><div class="program-art program-art-trophy" aria-hidden="true">🏆<span class="art-ring"></span></div><div class="program-content"><span class="program-category">CHALLENGE ACCEPTED</span><h3>مسابقه و هکاتون</h3><p>رقابت‌های پردازش متن، الگوریتم، ایده‌پردازی و تیم‌سازی.</p></div><span class="program-arrow">↗</span></article>
+        <article class="program-card reveal"><span class="program-no">/ 03</span><div class="program-art program-art-network" aria-hidden="true"><span class="network-nodes"><i></i><i></i><i></i><i></i><i></i></span></div><div class="program-content"><span class="program-category">BETTER TOGETHER</span><h3>همکاری بین‌رشته‌ای</h3><p>رویدادهای مشترک با انجمن‌های هنر، پزشکی، مدیریت و سایر رشته‌ها.</p></div><span class="program-arrow">↗</span></article>
+        <article class="program-card reveal"><span class="program-no">/ 04</span><div class="program-art program-art-media" aria-hidden="true"><span class="sound-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div><div class="program-content"><span class="program-category">MAKE SOME NOISE</span><h3>پادکست و رسانه</h3><p>گفت‌وگو درباره تکنولوژی، مسیر شغلی و قصه‌های واقعی دانشجوها.</p></div><span class="program-arrow">↗</span></article>
+        <article class="program-card card-wide reveal"><span class="program-no">/ 05</span><div class="program-art program-art-type" aria-hidden="true">IDEAS<span>ARE</span>CONTAGIOUS.</div><div class="program-content"><span class="program-category">PUBLISH THE FUTURE</span><h3>نشریه، مقاله و تجربه‌نگاری</h3><p>از معرفی ابزارهای جدید تا مصاحبه، مقاله دانشجویی و انتشار پروژه‌ها.</p></div><span class="program-arrow">↗</span></article>
+      </div></div></section>
+
+    <section class="statement-section" aria-label="شعار انجمن"><div class="shell"><div class="statement-top"><span>THE MANIFESTO</span><span>✳</span><span>VOL. 001</span></div><p class="statement-text reveal">آینده چیزی نیست که <span>منتظرش بمونیم.</span><br><em>چیزیه که با هم می‌سازیم.</em></p><div class="statement-bottom"><span>STAY CURIOUS. KEEP CREATING.</span><span>© COMPUTER SOCIETY</span></div></div></section>
+
+    <section id="editorial" class="section editorial-section section-pad"><div class="shell"><div class="section-label reveal"><span>04 / BEYOND THE CODE</span><span>رسانه انجمن</span></div><div class="section-head reveal"><div><p class="tiny-kicker">THOUGHTS WORTH SHARING</p><h2 class="display-heading">صدامون رو <em>بشنو.</em></h2></div><p class="section-intro">علم فقط توی مقاله و پاورپوینت نیست. ما درباره‌ش می‌نویسیم، حرف می‌زنیم و با بقیه به اشتراک می‌ذاریم.</p></div>
+      <div class="editorial-grid"><article class="editorial-card magazine-card reveal"><div class="editorial-copy"><span class="editorial-tag">DIGITAL MAGAZINE / ISSUE ZERO</span><h3>نشریه <em>«بیت»</em></h3><p>از پشت‌پرده پروژه‌ها تا ایده‌هایی که ذهنمون رو قلقلک می‌دن. اولین شماره در مرحله برنامه‌ریزیه.</p><a href="#join" class="text-link">به تیم تحریریه بپیوند <span>↗</span></a></div><div class="magazine-cover" aria-hidden="true"><div class="magazine-top">BIT <span>VOL. 00</span></div><div class="magazine-center">بیت<span>BEYOND<br>THE CODE.</span></div><div class="magazine-bottom">A DIGITAL PUBLICATION<br>BY THE COMPUTER SOCIETY <b>✳</b></div></div></article>
+      <article class="editorial-card podcast-card reveal"><div class="editorial-copy"><span class="editorial-tag">PODCAST / COMING SOON</span><h3>پادکست <em>«سیگنال»</em></h3><p>گفت‌وگوهایی بدون اسلایدهای خسته‌کننده، درباره زندگی وسط دنیای تکنولوژی. به‌زودی.</p><a href="#join" class="text-link">عضو تیم محتوا شو <span>↗</span></a></div><div class="podcast-visual" aria-hidden="true"><div class="podcast-disc disc-outer"><div class="podcast-disc disc-middle"><div class="podcast-disc disc-inner"><span>سیگنال<span class="podcast-en">SIGNAL / 001</span></span></div></div></div><span class="waveform">▂▅▃▆▃▇▂▅▇▃▆▂▅▃▇▅▃▆▂</span></div></article></div>
+      </div></section>
+
+    <section class="community-section section-pad"><div class="shell community-inner"><div class="reveal"><div class="section-label light-label"><span>05 / THE PEOPLE</span><span>آدم‌های ما</span></div><p class="tiny-kicker">EVERY GREAT THING STARTS WITH PEOPLE.</p><h2 class="display-heading">تنهایی باهوشی.<br><em>کنار هم بی‌نظیریم.</em></h2><p>فرقی نمی‌کنه ترم یکی یا چند تا پروژه تو گیت‌هابت داری؛ اگه کنجکاوی و دوست داری چیزی بسازی، اینجا برای توئه.</p><a href="#join" class="btn btn-white">بیا عضوی از داستان باش <span>↗</span></a></div><div class="community-art reveal" aria-hidden="true"><div class="community-globe"><span class="globe-caption">YOU BELONG HERE.</span><span class="globe-star star-a">✳</span><span class="globe-star star-b">✦</span><span class="globe-star star-c">✳</span><span class="globe-coord">THE NEXT GENERATION OF BUILDERS</span></div></div></div></section>
+
+    <section id="join" class="section join-section section-pad"><div class="shell"><div class="section-label reveal"><span>06 / JOIN THE MOVEMENT</span><span>ثبت‌نام</span></div><div class="join-head reveal"><p class="tiny-kicker">YOUR NEXT CHAPTER STARTS HERE</p><h2 class="display-heading">جای تو اینجا <em>خالیه.</em></h2><p>برای عضویت در انجمن یا پیش‌ثبت‌نام رویدادها، فرم رو پر کن. بقیه‌ش با ما.</p></div>
+      <div class="registration-shell reveal"><aside class="join-aside"><span class="form-aside-label">LET'S CONNECT / 2026</span><h3>یه فرم کوتاه.<br><em>یه دنیا فرصت.</em></h3><p>ورودت به جمعی از آدم‌های کنجکاو که می‌خوان بیشتر از یه مدرک دانشگاهی بسازن.</p><div class="aside-benefits"><div><span>✳</span> اطلاع از کارگاه‌ها و رویدادها</div><div><span>✳</span> فرصت حضور در تیم‌های پروژه‌ای</div><div><span>✳</span> عضویت در تیم محتوا، نشریه و مسابقات</div></div><div class="aside-motif" aria-hidden="true">{ <span>your_next_move</span> }</div></aside>
+      <div class="form-pane"><div class="form-tabs" role="tablist" aria-label="نوع ثبت‌نام"><button type="button" class="form-tab is-active" id="tab-member" role="tab" aria-selected="true" aria-controls="memberForm" data-tab="member">عضویت در انجمن <span>↗</span></button><button type="button" class="form-tab" id="tab-event" role="tab" aria-selected="false" aria-controls="eventForm" data-tab="event">ثبت‌نام رویداد <span>↗</span></button></div>
+      <form id="memberForm" class="registration-form" novalidate role="tabpanel" aria-labelledby="tab-member">
+        <div class="form-row"><label>نام و نام خانوادگی <b>*</b><input name="full_name" placeholder="مثلاً رها جودتی" autocomplete="name" required minlength="3" maxlength="100"></label><label>شماره تماس <b>*</b><input name="phone" type="tel" dir="ltr" placeholder="0912 345 6789" autocomplete="tel" required inputmode="tel"></label></div>
+        <div class="form-row"><label>ایمیل <b>*</b><input name="email" type="email" dir="ltr" placeholder="you@example.com" autocomplete="email" required maxlength="160"></label><label>رشته تحصیلی <b>*</b><select name="major" required><option value="">انتخاب کن...</option><option>مهندسی کامپیوتر</option><option>علوم کامپیوتر</option><option>مهندسی برق</option><option>مدیریت</option><option>هنر و طراحی</option><option>علوم پزشکی</option><option>سایر رشته‌ها</option></select></label></div>
+        <fieldset class="interest-fieldset"><legend>به چی علاقه داری؟ <span>(می‌تونی چندتا انتخاب کنی)</span></legend><div class="interest-options"><label><input type="checkbox" name="interests" value="هوش مصنوعی"><span>هوش مصنوعی</span></label><label><input type="checkbox" name="interests" value="برنامه‌نویسی"><span>برنامه‌نویسی</span></label><label><input type="checkbox" name="interests" value="امنیت و شبکه"><span>امنیت و شبکه</span></label><label><input type="checkbox" name="interests" value="طراحی و UI/UX"><span>UI/UX</span></label><label><input type="checkbox" name="interests" value="مسابقات"><span>مسابقات</span></label><label><input type="checkbox" name="interests" value="تولید محتوا و نشریه"><span>نشریه و محتوا</span></label><label><input type="checkbox" name="interests" value="پادکست"><span>پادکست</span></label><label><input type="checkbox" name="interests" value="برگزاری رویداد"><span>برگزاری رویداد</span></label></div></fieldset>
+        <label class="form-note">چیزی هست دوست داشته باشی بدونیم؟ <span>(اختیاری)</span><textarea name="notes" rows="2" maxlength="1000" placeholder="مهارت‌ها، ایده‌ها یا هر چیزی که دوست داری..." ></textarea></label>
+        <label class="check-consent"><input type="checkbox" name="consent" required><span>با ثبت اطلاعاتم برای هماهنگی فعالیت‌های انجمن و دریافت اطلاع‌رسانی مرتبط موافقم. <b>*</b></span></label>
+        <input class="honeypot" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true"><button class="btn btn-submit" type="submit">ثبت درخواست عضویت <span>↗</span></button><p class="form-feedback" aria-live="polite"></p>
+      </form>
+      <form id="eventForm" class="registration-form hidden" novalidate role="tabpanel" aria-labelledby="tab-event">
+        <div class="form-row"><label>نام و نام خانوادگی <b>*</b><input name="full_name" placeholder="نام کاملت" autocomplete="name" required minlength="3" maxlength="100"></label><label>شماره تماس <b>*</b><input name="phone" type="tel" dir="ltr" placeholder="0912 345 6789" autocomplete="tel" required inputmode="tel"></label></div>
+        <div class="form-row"><label>ایمیل <b>*</b><input name="email" type="email" dir="ltr" placeholder="you@example.com" autocomplete="email" required maxlength="160"></label><label>رشته تحصیلی <b>*</b><input name="major" placeholder="مثلاً مهندسی کامپیوتر" required maxlength="100"></label></div>
+        <label>برای کدوم رویداد؟ <b>*</b><select id="eventSelect" name="event_id" required><option value="">انتخاب رویداد...</option></select></label>
+        <p class="event-form-info" id="eventInfo">زمان دقیق و محل برگزاری برنامه‌ها بعد از نهایی‌شدن اطلاع‌رسانی خواهد شد.</p>
+        <label class="check-consent"><input type="checkbox" name="consent" required><span>با ثبت اطلاعاتم برای هماهنگی این رویداد و اطلاع‌رسانی‌های مرتبط موافقم. <b>*</b></span></label>
+        <input class="honeypot" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true"><button class="btn btn-submit" type="submit">ثبت‌نام در رویداد <span>↗</span></button><p class="form-feedback" aria-live="polite"></p>
+      </form>
+      <p class="form-security"><span>⌁</span> اطلاعات فقط برای هماهنگی فعالیت‌های انجمن استفاده می‌شود.</p></div></div>
+      </div></section>
+    <section class="faq-section section-pad"><div class="shell faq-layout"><div class="reveal"><span class="tiny-kicker">YOU MIGHT BE WONDERING</span><h2 class="display-heading">سؤال داری؟<br><em>حق داری.</em></h2><p>این چندتا رو زیاد ممکنه بپرسی.</p></div><div class="faq-list reveal"><details><summary>عضویت در انجمن هزینه داره؟ <span>+</span></summary><p>عضویت اولیه از طریق این سایت رایگانه. اگر رویدادی هزینه داشته باشه، جزئیاتش پیش از ثبت‌نام نهایی جداگانه اعلام می‌شه.</p></details><details><summary>اگه ترم اول باشم هم می‌تونم عضو بشم؟ <span>+</span></summary><p>صددرصد! لازم نیست حرفه‌ای باشی. کافی‌ه علاقه‌مند به یادگیری، مشارکت و کار تیمی باشی.</p></details><details><summary>اگه رشته‌م کامپیوتر نباشه چی؟ <span>+</span></summary><p>خوشحال می‌شیم از علاقه‌مندان رشته‌های دیگه هم برای همکاری‌های بین‌رشته‌ای استقبال کنیم. شرایط هر فعالیت ممکنه متفاوت باشه.</p></details><details><summary>زمان و مکان رویدادها رو از کجا بفهمم؟ <span>+</span></summary><p>پس از قطعی‌شدن برنامه‌ها، جزئیات در همین سایت و کانال‌های رسمی انجمن اعلام می‌شه.</p></details></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="shell"><div class="footer-top"><div><a href="#top" class="footer-brand"><span class="footer-star">✳</span> انجمن علمی کامپیوتر</a><p>دانشگاه آزاد اسلامی واحد تبریز<br>اینجا آینده، یه پروژه مشترکه.</p></div><div class="footer-nav"><div><h4>کاوش</h4><a href="#about">درباره انجمن</a><a href="#events">رویدادها</a><a href="#explore">فعالیت‌ها</a></div><div><h4>همراه شو</h4><a href="#join">عضویت</a><a href="#join" data-open-event>ثبت‌نام رویداد</a><a href="#editorial">نشریه و پادکست</a></div></div><div class="footer-giant">BUILD<br>TOGETHER<span>.</span></div></div><div class="footer-bottom"><span>© <span id="currentYear">2026</span> انجمن علمی کامپیوتر. تمامی حقوق محفوظ است.</span><span>MADE WITH CURIOSITY IN TABRIZ <b>✳</b></span><a href="admin/" class="footer-admin" aria-label="ورود مدیریت">مدیریت ↗</a></div></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
